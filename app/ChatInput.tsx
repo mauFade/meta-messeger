@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { v4 } from "uuid";
 
 const ChatInput = () => {
   const [message, setMessage] = useState("");
@@ -11,10 +12,15 @@ const ChatInput = () => {
     if (!message) return;
 
     const messageToSend = message;
+    const id = v4();
 
     setMessage("");
 
-    console.log(messageToSend);
+    const data = {
+      id,
+      message,
+      created_at: Date.now(),
+    };
   };
 
   return (

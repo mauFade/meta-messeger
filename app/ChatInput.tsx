@@ -20,6 +20,10 @@ const ChatInput = () => {
       id,
       message,
       created_at: Date.now(),
+      username: "Mauricio Cardoso",
+      profilePic:
+        "https://scontent.fbfh10-1.fna.fbcdn.net/v/t39.30808-6/321792431_543417104363881_3987439919762727301_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oJTFJ77rb9YAX9tFo-X&_nc_ht=scontent.fbfh10-1.fna&oh=00_AfCQJcXanc4N9B5pPmaVPXy-MAaeSIiNDapcKkPHVq4feA&oe=63D3753F",
+      email: "mauriciocardoso@email.com",
     };
   };
 
